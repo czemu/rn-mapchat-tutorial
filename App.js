@@ -104,8 +104,8 @@ export default class App extends Component {
           style={styles.map}
           initialRegion={getRegion(48.860831, 2.341129, 160000)}
         >
-          {this.state.messages.map((messages, index) => {
-            let { latitude, longitude, text, timestamp } = messages;
+          {this.state.messages.map((message, index) => {
+            let { latitude, longitude, text, timestamp } = message;
 
             return (
               <Marker
