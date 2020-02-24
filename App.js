@@ -114,7 +114,7 @@ export default class App extends Component {
                 identifier={'marker_' + index}
                 coordinate={{ latitude, longitude }}
               >
-                <Callout style={styles.callout}>
+                <Callout>
                   <View>
                     <Text>{text}</Text>
                     <Text style={{ 'color': '#999' }}>{moment(timestamp).fromNow()}</Text>
